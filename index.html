@@ -3,26 +3,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rahul's Excalidraw Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     }
-    iframe {
-      border: none;
-      height: 100%;
-      width: 100%;
-      display: block;
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+      backdrop-filter: blur(6px);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #666;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      border-radius: 50px;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+      transform: scale(1.05);
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .container {
+        margin: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <iframe src="https://excalidraw.com/#url=https://raw.githubusercontent.com/rahultanwar5/my-excalidraw-notes/main/note.excalidraw"></iframe>
+  <div class="container">
+    <h1>Your Gateway to Data Migration Wisdom 🚀</h1>
+    <p>Click below to open my latest mind map & notes.</p>
+    <a class="btn" href="https://excalidraw.com/#json=ze43TkfrhTmFqeMWc2MDO,LTcpauWOBUGe6_70ccL2bw" target="_blank">
+      View Notes
+    </a>
+  </div>
 </body>
 </html>
